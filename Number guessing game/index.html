@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <html lang="en">
+  <head>
+  <meta charset="utf-8"/>
+  </head>
+<h2>Guess My Number</h2>
+<p>Pick a number between 1 and 10!</p>
+
+<p id='demo'></p>
+<button>Press Me</button>
+
+<script>
+var button = document.querySelector ('button');
+
+button.onclick = function(){
+  var myNumber = Math.floor(Math.random() * 11);
+  var guessNumber = prompt ('Guess My Number');
+    if (guessNumber == myNumber) {
+        alert ('Winner!')
+    }
+    else if (guessNumber < myNumber) {
+      alert ('Try Again')
+    }
+    else if (guessNumber > myNumber) {
+      alert ('Try Again')
+    }
+document.getElementById("demo").innerHTML = text
+}
+
+</script>
+
+</body>
+</html>
